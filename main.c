@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <Windows.h>
-#define Name "Антон"
-#define LastName "Дробітько"
-#define GroupName "РЕ-22"
-#define Faculty "РТФ"
-#define University "КПІ Ігоря Сікорського"
-unsigned int age;      //оголошення змінної
-unsigned int age = 18;  //ініціалізація змінної
-unsigned int semestr;
+#define Name "Anton"
+#define LastName "Drobitko"
+#define GroupName "RE-22"
+#define Faculty "RTF"
+#define University "Igor Sikorsky KPI"
+unsigned int age;
+unsigned int age = 17;
+unsigned int semester;
 float admissionScore;
 int grade1;
 int grade2;
@@ -21,29 +21,29 @@ int main ()
 {
     SetConsoleOutputCP(1251);
     SetConsoleCP (1251);
-    printf("%s %s Виконайте наступні дії.\n", Name, LastName);
-    printf("Введіть номер семестру: ");
-    scanf("%u" , &semestr);
+    printf("%s %s Follow next steps.\n", Name, LastName);
+    printf("Enter the semester number: ");
+    scanf("%u" , &semester);
 
-    printf("Введіть свій вступний бал: ");
+    printf("Enter your admission score: ");
     scanf("%f", &admissionScore);
 
-    printf("Введіть оцінку за предмет №1: ");
+    printf("Enter a grade for the subject #1: ");
     scanf("%d", &grade1);
 
-    printf("Введіть оцінку за предмет №2: ");
+    printf("Enter a grade for the subject #2: ");
     scanf("%d", &grade2);
 
-    printf("Введіть оцінку за предмет №3: ");
+    printf("Enter a grade for the subject #3: ");
     scanf("%d", &grade3);
 
-    printf("Введіть оцінку за предмет №4: ");
+    printf("Enter a grade for the subject #4: ");
     scanf("%d", &grade4);
 
-    printf("Введіть оцінку за предмет №5: ");
+    printf("Enter a grade for the subject #5: ");
     scanf("%d", &grade5);
 
-    printf("Введіть свій вік: ");
+    printf("Enter your age: ");
     scanf("%u", &age);
 
     averageGrade = (double)(grade1+grade2+grade3+grade4+grade5)/5;
@@ -55,12 +55,12 @@ int main ()
     printf("\n%s", Faculty);
     printf("\n%s", GroupName);
     printf("\n***************");
-    printf("\nстудент: %s %s", Name, LastName);
-    printf("\nвік: %u", age);
-    printf("\nсеместр: %u", semestr);
+    printf("\nstudent: %s %s", Name, LastName);
+    printf("\nage: %u", age);
+    printf("\nsemester: %u", semester);
     printf("\n===============");
-    printf("\nвступний бал: %.1f", admissionScore);
-    printf("\nсередній бал = %.2lf", averageGrade);
+    printf("\nadmission score: %.1f", admissionScore);
+    printf("\naverage grade = %.2lf", averageGrade);
     printf("\n");
 
 
