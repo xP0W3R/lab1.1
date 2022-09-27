@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <Windows.h>
+#include <Windows.h>             //added windows libraries so I can use kyrylytsia, but GitHub doesnt support it :(
 #define Name "Anton"
 #define LastName "Drobitko"
 #define GroupName "RE-22"
 #define Faculty "RTF"
 #define University "Igor Sikorsky KPI"
-unsigned int age;
-unsigned int age = 17;
-unsigned int semester;
-float admissionScore;
-int grade1;
-int grade2;
-int grade3;
-int grade4;
-int grade5;
-double averageGrade;
+unsigned int age;             //variable declaration
+unsigned int age = 17;        //variable initialization
+unsigned int semester;        //variable to store the semester number
+float admissionScore;         //variable to store the admisiion score
+int grade1;                   //grade of the first subject
+int grade2;                   //grade of the second subject
+int grade3;                   //grade of the third subject
+int grade4;                   //grade of the fourth subject
+int grade5;                   //grade of the fifth subject
+double averageGrade;          //variable, the average grade
 
 int main ()
 {
     SetConsoleOutputCP(1251);
-    SetConsoleCP (1251);
+    SetConsoleCP (1251);             //the code page so console can transform and show the symbols of kyrylytsia
     printf("%s %s Follow next steps.\n", Name, LastName);
     printf("Enter the semester number: ");
     scanf("%u" , &semester);
@@ -63,7 +63,5 @@ int main ()
     printf("\naverage grade = %.2lf", averageGrade);
     printf("\n");
 
-
-    return 0;
 
 }
